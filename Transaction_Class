@@ -1,0 +1,68 @@
+import pandas as pd
+class Transaction():
+    def __init__(self):
+        self.contents = []
+        self.nama=[]
+        
+    def add_item(self):
+        self.name = input('nama item: ')
+        self.qty = input('jumlah item: ')
+        self.price = input('harga/item: ')
+        try:
+            self.contents.append({'nama_item' : self.name,
+                              'jumlah_item' : float(self.qty),
+                              'harga_item' : float(self.price)})
+            self.nama.append(self.name)
+        except ValueError:
+            print('Kayaknya kamu salah input deh :(')
+        
+    
+    def update_item_name(self,nm_old,nm_upd):
+        indexi=[i for i,v in enumerate(self.nama) if v==nm_old]
+        i=int(indexi[0])
+        self.contents[i].update({'nama_item':nm_upd})
+        
+    def update_item_qty(self,name,new_qty):
+        indexj=[i for i,v in enumerate(self.nama) if v==name]
+        j=int(indexj[0])
+        self.contents[j].update({'jumlah_item':new_qty})
+        
+    def update_item_price(self,name,new_price):
+        indexj=[i for i,v in enumerate(self.nama) if v==name]
+        j=int(indexj[0])
+        self.contents[j].update({'harga_item':new_price})
+        
+    def clear_transaction(self):
+        self.contents.clear()
+        print('Keranjang kamu kosong, belanja lagi yuk')
+        
+    def delete_item(self,name):
+        indexj=[i for i,v in enumerate(self.nama) if v==name]
+        j=int(indexj[0])
+        self.contents.pop(j)
+        
+    def total_price(self):
+        harga=[]
+        qty=[]
+        for item in self.contents:
+            qty.append(item['jumlah_item'])
+            harga.append(item['harga_item'])
+        total_hrg=np.dot(qty,harga)
+        return(total_hrg)
+        
+    def check_order(self):
+        nama=[]
+        qty=[]
+        harga=[]
+        total=[]
+        for item in self.contents:
+            nama.append(item['nama_item'])
+            qty.append(item['jumlah_item'])
+            harga.append(item['harga_item'])
+            total.append(item['jumlah_item']*item['harga_item']) 
+        x=sum(total)
+        print (f'Hore, total order kamu {x}')
+        
+        pd.options.display.float_format = '{:,.2f}'.format
+        table=pd.DataFrame({'Nama Item':nama,'Jumlah Item':qty,'Harga/item':harga,'Total harga':total})
+        return(table)
