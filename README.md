@@ -19,13 +19,28 @@ This project was aimed to utilize object oriented programming as a way to create
 
 **Part 3: Program Description**
 
-1. Create Transaction Class
+**1. Create Transaction Class**
 
    The shopping cart class will be named Transaction. This Class will have 2 attributes and 8 method. The attributes includes:
    - **self.contents**: a dictionary that contains all item names, item quantities, and item prices inputed by user
    - **self.nama**: a list that contain all item names from self.contents. This attributes will be used in several class method.
 
-2. add
-     
+**2. add_item() method**
+
+User can add item by calling add_item function. This item will append user input into self.contents attribute.
+   
+<img width="155" alt="image" src="https://github.com/evellynverity/Shopping-Cart-Project/assets/139136838/b422d07a-262d-483c-b952-73b85234082d">
+
+**3. update_item_name() method**
+
+User can update item name in the cart. This method requires two input: old name and new name. 
+
+<img width="373" alt="image" src="https://github.com/evellynverity/Shopping-Cart-Project/assets/139136838/5274310b-b601-4393-a97a-de2e54c2a767">
+
+**3. update_item_qty() method**
+
+User can update item quantity in the cart. This method requires two input: item name and new quantity. 
+   
+
   
    
