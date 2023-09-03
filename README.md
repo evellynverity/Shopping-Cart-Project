@@ -1,5 +1,5 @@
 # Shopping-Cart-Project
-This project was made as final project for PacMann Pro Introduction to Python. 
+This project was made as final project for PacMann Pro Introduction to Python. To help with this project we will be using pandas and numpy package.  
 
 # **Part 1: Problem Statement**
 
