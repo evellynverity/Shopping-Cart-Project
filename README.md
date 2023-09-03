@@ -40,7 +40,34 @@ User can update item name in the cart. This method requires two input: old name 
 **3. update_item_qty() method**
 
 User can update item quantity in the cart. This method requires two input: item name and new quantity. 
-   
+
+<img width="590" alt="image" src="https://github.com/evellynverity/Shopping-Cart-Project/assets/139136838/27d12729-6181-46bc-a892-94fb54654542">
+
+**4. update_item_price() method**
+
+User can update item quantity in the cart. This method requires two input: item name and new quantity.   
+
+<img width="368" alt="image" src="https://github.com/evellynverity/Shopping-Cart-Project/assets/139136838/e09fc619-4363-4112-b65c-de0263379ac4">
+
+**5. clear_transaction() method**
+
+User can delete all items in the cart.
+
+<img width="589" alt="image" src="https://github.com/evellynverity/Shopping-Cart-Project/assets/139136838/79a1e0af-9a73-4415-b44c-470a37ebab28">
+
+**6. delete_item() method**
+
+User can delete certain item in cart by inputting item name.
+
+<img width="377" alt="image" src="https://github.com/evellynverity/Shopping-Cart-Project/assets/139136838/677b0c90-0985-4b37-b1ec-e8f35475b089">
+
+
+**7. total_price method**
+
+Calculating total item_quantity*item_price for all item in the cart.
+
+<img width="351" alt="image" src="https://github.com/evellynverity/Shopping-Cart-Project/assets/139136838/99158984-ae89-4d09-8ad7-48bb0f185765">
+
 
   
    
