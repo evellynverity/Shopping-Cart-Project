@@ -48,7 +48,7 @@ class Transaction():
             qty.append(item['jumlah_item'])
             harga.append(item['harga_item'])
         total_hrg=np.dot(qty,harga)
-        return(total_hrg)
+        print (f'Hore, total order kamu {total_hrg}')
         
     def check_order(self):
         nama=[]
@@ -60,8 +60,6 @@ class Transaction():
             qty.append(item['jumlah_item'])
             harga.append(item['harga_item'])
             total.append(item['jumlah_item']*item['harga_item']) 
-        x=sum(total)
-        print (f'Hore, total order kamu {x}')
         
         pd.options.display.float_format = '{:,.2f}'.format
         table=pd.DataFrame({'Nama Item':nama,'Jumlah Item':qty,'Harga/item':harga,'Total harga':total})
