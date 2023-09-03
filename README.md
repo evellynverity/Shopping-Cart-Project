@@ -1,11 +1,11 @@
 # Shopping-Cart-Project
 This project was made as final project for PacMann Pro Introduction to Python. 
 
-**Part 1: Problem Statement**
+# **Part 1: Problem Statement**
 
 This project was aimed to utilize object oriented programming as a way to create a functional shopping cart. 
 
-**Part 2: Purpose**
+# **Part 2: Purpose**
 
 1. Practicing clean code in accordance with PEP 8
 2. Practicing Object Oriented Programming
@@ -17,7 +17,7 @@ This project was aimed to utilize object oriented programming as a way to create
    - Get calculation total price
    - Check their order
 
-**Part 3: Program Description**
+# **Part 3: Program Description**
 
 **3.1. Create Transaction Class**
 
@@ -84,7 +84,8 @@ Display all item name, quantity, price per item, and total item price in a neat 
 
 
 
-**4. Future Improvement**  
+# **4. Future Improvement**  
 
-   4.1 Shorter code. While the writer tried to follow PEP 8, She thinks that her code is too long and need to be shortened in the future when she has the capabilities to do so.
-   4.2 Various error handling scenario. This version only handle one error scenario: the quantity or the price is not number. 
+   **4.1 Shorter code.** While the writer tried to follow PEP 8, She thinks that her code is too long and need to be shortened in the future when she has the capabilities to do so.
+   
+   **4.2 Various error handling scenario.** This version only handle one error scenario: the quantity or the price is not number. 
