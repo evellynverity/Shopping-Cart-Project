@@ -22,6 +22,7 @@ class Transaction():
         indexi=[i for i,v in enumerate(self.nama) if v==nm_old]
         i=int(indexi[0])
         self.contents[i].update({'nama_item':nm_upd})
+        self.nama[i]=nm_upd
         
     def update_item_qty(self,name,new_qty):
         indexj=[i for i,v in enumerate(self.nama) if v==name]
